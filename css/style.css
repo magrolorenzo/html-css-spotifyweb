@@ -15,6 +15,10 @@ a{
     text-decoration: none;
 }
 
+.text-uppercase{
+    text-transform: uppercase;
+}
+
 /* ________________________ Main ________________________ */
 main{
     display: flex;
@@ -25,27 +29,13 @@ main{
     width: 232px;
     height: calc(100vh - 90px);
     background-color: #040404;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.logo-container{
-    padding-top: 24px;
-    padding-left: 24px;
-    margin-bottom: 18px;
-}
-
-.logo-container img{
-    width: 130px;
-}
-
-.top-menu-li{
-    height: 40px;
+.side-bar li{
     padding: 0 8px;
-    vertical-align: middle;
-}
-
-.top-menu-li i{
-    margin-right: 15px;
-    font-size: 20px;
 }
 
 .side-bar-link{
@@ -64,18 +54,60 @@ main{
 
 .side-bar-link:focus{
     color: white;
+}
+
+.side-bar i{
+    margin-right: 15px;
+    font-size: 20px;
+}
+/******************* Logo *******************/
+.logo-container{
+    padding-top: 24px;
+    padding-left: 24px;
+    margin-bottom: 18px;
+}
+
+.logo-container img{
+    width: 130px;
+}
+
+/******************* Top Menu *******************/
+.side-bar-link{
+    display: inline-block;
+    padding-left: 16px;
+    color: #b3b3b3;
+    font-weight: 500;
+    line-height: 40px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.side-bar-link:hover {
+    color: white;
+}
+
+.top-menu-li .side-bar-link:focus{
+    color: white;
     background-color: #282828;
 }
 
+/******************* Music Menu *******************/
+.music-menu{
+    margin-top: 15px;
+}
 
+/******************* User *******************/
+.login-and-download{
+    padding: 0 25px;
+}
 
+.login-and-download a{
+    padding: 0 ;
+}
 
-
-
-
-
-
-
+.download-link{
+    border-bottom: 1px solid #b3b3b3;
+}
 
 /* ________________________ Main Window ________________________ */
 .content-window{
@@ -83,13 +115,119 @@ main{
     background-color: #121212;
 }
 
+
+
+
 /* ________________________ Footer ________________________ */
 footer{
-    height:90px;
-    width:100vw;
-    position:fixed;
-    bottom:0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
     background-color: #282828;
+    padding: 0px 16px;
     border-top: 1px solid black;
+}
 
+/******************* Song Info *******************/
+.song-info{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 13%; /* 250px */ 
+}
+
+.artwork-container img{
+    width: 56px;
+}
+
+
+.song-title{
+    color: white;
+}
+
+.artist{
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.artist:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.heart-container {
+    display: flex;
+}
+
+.heart-container a{
+    color: #b3b3b3;
+    margin: auto;
+}
+
+/******************* Player *******************/
+.player{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.player-buttons{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #b3b3b3;
+}
+
+.player-btn{
+}
+
+.fa-pause-circle{
+    font-size: 30px;
+}
+
+.song-time{
+    width: 100%;
+    text-align: center;
+}
+
+#time{
+    -webkit-appearance: none;
+    width: 80%;
+    height: 3px;
+    background-color: #535353;
+}
+#time::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #1db954;
+  box-shadow: 1px 1px 1px black;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/******************* Volume*******************/
+.volume{
+    width: 13%;
+    height: 100%;
+    border: 1px solid green;
 }

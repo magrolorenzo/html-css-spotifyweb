@@ -13,41 +13,130 @@
         <main>
             <section class="side-bar">
 
-                <div class="logo-container">
-                    <img src="https://cdn.freebiesupply.com/logos/large/2x/spotify-1-logo-black-and-white.png" alt="spotify logo">
+                <div class="top-side-bar">
+                    <div class="logo-container">
+                        <img src="https://cdn.freebiesupply.com/logos/large/2x/spotify-1-logo-black-and-white.png" alt="spotify logo">
+                    </div>
+
+                    <div class="top-menu">
+                        <ul class="top-menu-ul">
+                            <li class="top-menu-li">
+                                <a href="#" class="side-bar-link"><i class="fas fa-home"></i> Home</a>
+                            </li>
+                            <li class="top-menu-li">
+                                <a href="#" class="side-bar-link"><i class="fas fa-search"></i> Cerca</a>
+                            </li>
+                            <li class="top-menu-li">
+                                <a href="#" class="side-bar-link"><i class="fas fa-compact-disc"></i> La tua Libreria</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="music-menu">
+                        <ul class="music-list-ul">
+                            <li class="music-list-li">
+                                <a href="#" class="side-bar-link text-uppercase">
+                                    Ascoltati di Recente
+                                </a>
+                            </li>
+                            <li class="music-list-li">
+                                <a href="#" class="side-bar-link">
+                                    Artista 1
+                                </a>
+                            </li>
+                            <li class="music-list-li">
+                                <a href="#" class="side-bar-link">
+                                    Artista 2
+                                </a>
+                            </li>
+                            <li class="music-list-li">
+                                <a href="#" class="side-bar-link">
+                                    Artista 3
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="top-menu">
-                    <ul class="top-menu-ul">
-                        <li class="top-menu-li">
-                            <a href="#" class="side-bar-link"><i class="fas fa-home"></i> Home</a>
-                        </li>
-                        <li class="top-menu-li">
-                            <a href="#" class="side-bar-link"><i class="fas fa-search"></i> Cerca</a>
-                        </li>
-                        <li class="top-menu-li">                            
-                            <a href="#" class="side-bar-link"><i class="fas fa-compact-disc"></i> La tua Libreria</a>
-                        </li>
-                    </ul>
+                <div class="login-and-download">
+                    <div class="download-link">
+                        <span >
+                            <a href="#" class="side-bar-link">
+                                <i class="far fa-arrow-alt-circle-down"></i> Install App
+                            </a>
+                        </span>
+                    </div>
+                    <div class="login-link">
+                        <span >
+                            <a href="#" class="side-bar-link">
+                                <i class="fas fa-user"></i> Login
+                            </a>
+                        </span>
+                    </div>
                 </div>
-
 
             </section>
 
+            <section class="content-window">
 
+            </section>
 
-
-
-
-
-
-
-
-
-
-
-            <section class="content-window"></section>
         </main>
-        <footer></footer>
+
+        <footer>
+
+            <div class="song-info">
+
+                <div class="artwork-container">
+                    <img src="https://i.scdn.co/image/ab67616d00004851fecc28a97580e0605990211c" alt="artwork">
+                </div>
+
+                <div class="title-and-artist">
+                    <span>
+                        <a href="#" class="song-title">
+                            Texas Sun
+                        </a>
+                    </span>
+                    <p>
+                        <span><a href="#" class="artist">Khruangbin</a></span>, <span><a href="#" class="artist">Leon Bridges</a></span>
+                    </p>
+                </div>
+
+                <div class="heart-container">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+
+            </div>
+
+            <div class="player">
+
+                <div class="player-buttons">
+                    <span>
+                        <i class="fas fa-random player-btn"></i>
+                    </span>
+                    <span>
+                        <i class="fas fa-step-backward player-btn"></i>
+                    </span>
+                    <span>
+                        <i class="far fa-pause-circle player-btn"></i>
+                    </span>
+                    <span>
+                        <i class="fas fa-step-forward player-btn"></i>
+                    </span>
+                    <span>
+                        <i class="fas fa-redo-alt player-btn"></i>
+                    </span>
+                </div>
+                <div class="song-time">
+                    <input type="range" id="time" name="time" min="0:00" max="4:12">
+                </div>
+
+            </div>
+
+            <div class="volume">
+
+            </div>
+
+        </footer>
     </body>
 </html>
