@@ -118,6 +118,7 @@ main{
 
 
 
+
 /* ________________________ Footer ________________________ */
 footer{
     display: flex;
@@ -137,13 +138,12 @@ footer{
     justify-content: space-between;
     display: flex;
     align-items: center;
-    width: 13%; /* 250px */ 
+    width: 250px;
 }
 
 .artwork-container img{
     width: 56px;
 }
-
 
 .song-title{
     color: white;
@@ -168,6 +168,9 @@ footer{
     margin: auto;
 }
 
+.heart-container a:hover{
+    color: white;
+}
 /******************* Player *******************/
 .player{
     display: flex;
@@ -185,7 +188,9 @@ footer{
     color: #b3b3b3;
 }
 
-.player-btn{
+.player-btn:hover{
+    color: white;
+    cursor: pointer;
 }
 
 .fa-pause-circle{
@@ -197,12 +202,29 @@ footer{
     text-align: center;
 }
 
+.song-time::before{
+    content: "2:06";
+    margin-right: 10px;
+}
+
+.song-time::after{
+    content: "4:12";
+    margin-left: 10px;
+}
+
+.song-time::before,
+.song-time::after{
+    font-size: 10px;
+
+}
+
 #time{
     -webkit-appearance: none;
     width: 80%;
     height: 3px;
     background-color: #535353;
 }
+
 #time::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 12px;
@@ -214,20 +236,50 @@ footer{
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
+#time:focus{
+    outline: none;
+}
 
 /******************* Volume*******************/
-.volume{
-    width: 13%;
+.other-controls{
+    width: 180px;
     height: 100%;
-    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.volume-container{
+    display: flex;
+    align-items: center;
+}
+
+.volume-container::before{
+    content: "\f028";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+#volume{
+    -webkit-appearance: none;
+    height: 3px;
+    width: 80px;
+    background-color: #535353;
+}
+
+#volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #1db954;
+  box-shadow: 1px 1px 1px black;
+  cursor: pointer;
+}
+
+#volume:focus{
+    outline: none;
 }
