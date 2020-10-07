@@ -3,3 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* colore sidebar: #040404 */
+/* link logo
+    https://cdn.freebiesupply.com/logos/large/2x/spotify-1-logo-black-and-white.png
+ */
+body{
+    color: #b3b3b3;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+}
+
+.side-bar{
+    width: 232px;
+    height: calc(100vh - 90px);
+    background-color: #040404;
+
+}
+
+footer {
+   position:fixed;
+   bottom:0px;
+   height:90px;
+   width:100vw;
+   background:#282828;
+}
