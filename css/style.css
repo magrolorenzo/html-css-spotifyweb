@@ -2,29 +2,94 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 14px;
 }
 
-/* colore sidebar: #040404 */
-/* link logo
-    https://cdn.freebiesupply.com/logos/large/2x/spotify-1-logo-black-and-white.png
- */
 body{
     color: #b3b3b3;
     font-family: 'Roboto', sans-serif;
-    background-color: #121212;
+    background-color: lightgreen;
 }
 
+a{
+    text-decoration: none;
+}
+
+/* ________________________ Main ________________________ */
+main{
+    display: flex;
+}
+
+/* ________________________ Side Bar ________________________ */
 .side-bar{
     width: 232px;
     height: calc(100vh - 90px);
     background-color: #040404;
-
 }
 
-footer {
-   position:fixed;
-   bottom:0px;
-   height:90px;
-   width:100vw;
-   background:#282828;
+.logo-container{
+    padding-top: 24px;
+    padding-left: 24px;
+    margin-bottom: 18px;
+}
+
+.logo-container img{
+    width: 130px;
+}
+
+.top-menu-li{
+    height: 40px;
+    padding: 0 8px;
+    vertical-align: middle;
+}
+
+.top-menu-li i{
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.side-bar-link{
+    display: inline-block;
+    padding-left: 16px;
+    color: #b3b3b3;
+    font-weight: 500;
+    line-height: 40px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.side-bar-link:hover {
+    color: white;
+}
+
+.side-bar-link:focus{
+    color: white;
+    background-color: #282828;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ________________________ Main Window ________________________ */
+.content-window{
+    width: calc(100vw - 232px);
+    background-color: #121212;
+}
+
+/* ________________________ Footer ________________________ */
+footer{
+    height:90px;
+    width:100vw;
+    position:fixed;
+    bottom:0px;
+    background-color: #282828;
+    border-top: 1px solid black;
+
 }
