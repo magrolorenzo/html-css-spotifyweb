@@ -9,7 +9,6 @@
 body{
     color: #b3b3b3;
     font-family: 'Roboto', sans-serif;
-    background-color: lightgreen;
 }
 
 a{
@@ -115,25 +114,24 @@ main{
 .content-window{
     width: calc(100vw - 80px);
     background-color: #121212;
-    overflow: hidden;
+    overflow: auto;
     padding: 40px 20px;
 }
 
 .container{
     display: flex;
-    justify-content: center;
-    max-width: 90%;
-    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    max-width: 85%;
     margin: auto;
-    border: 1px solid yellow;
 }
 
+/******************* Menu *******************/
 .menu{
     display: flex;
     align-items: center;
     width: 100%;
     height: 50px;
-    border-bottom: 1px solid red;
 }
 
 .reduced-menu{
@@ -166,12 +164,45 @@ main{
 }
 
 
+/******************* Music Container *******************/
+.music-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
 
+.section-title{
+    margin-bottom: 20px;
+}
 
+.section-title h1{
+    font-size: 32px;
+    color: white;
+}
 
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
+.card{
+    width: 200px;
+    text-align: center;
+    margin: 15px;
 
+}
+.card img{
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
 
+.card h2{
+    color: white;
+}
 
 /* ________________________ Footer ________________________ */
 footer{
