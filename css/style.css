@@ -15,37 +15,45 @@ a{
     text-decoration: none;
 }
 
+ul{
+    list-style: none;
+}
+
 .text-uppercase{
     text-transform: uppercase;
 }
 
+.side-bar-text{
+    display: none;
+}
+
 /* ________________________ Main ________________________ */
+
 main{
     display: flex;
 }
 
 /* ________________________ Side Bar ________________________ */
 .side-bar{
-    width: 232px;
+    width: 80px;
     height: calc(100vh - 90px);
     background-color: #040404;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.side-bar li{
-    padding: 0 8px;
+    align-items: center;
+    padding: 24px 16px 16px 16px;
 }
 
 .side-bar-link{
     display: inline-block;
-    padding-left: 16px;
     color: #b3b3b3;
     font-weight: 500;
     line-height: 40px;
     width: 100%;
     border-radius: 4px;
+    padding: 0;
+    text-align: center;
 }
 
 .side-bar-link:hover {
@@ -57,34 +65,30 @@ main{
 }
 
 .side-bar i{
-    margin-right: 15px;
+    margin-right: 0;
     font-size: 20px;
 }
+
+.top-side-bar{
+    display: flex;
+    flex-direction: column;
+}
+
 /******************* Logo *******************/
 .logo-container{
-    padding-top: 24px;
-    padding-left: 24px;
     margin-bottom: 18px;
 }
 
-.logo-container img{
-    width: 130px;
+#big-logo{
+    max-width: 130px;
+    display: none;
+}
+#small-logo{
+    max-width: 40px;
+    display: block;
 }
 
 /******************* Top Menu *******************/
-.side-bar-link{
-    display: inline-block;
-    padding-left: 16px;
-    color: #b3b3b3;
-    font-weight: 500;
-    line-height: 40px;
-    width: 100%;
-    border-radius: 4px;
-}
-
-.side-bar-link:hover {
-    color: white;
-}
 
 .top-menu-li .side-bar-link:focus{
     color: white;
@@ -94,15 +98,12 @@ main{
 /******************* Music Menu *******************/
 .music-menu{
     margin-top: 15px;
+    overflow: hidden;
 }
 
-/******************* User *******************/
+/******************* Login and Download *******************/
 .login-and-download{
-    padding: 0 25px;
-}
-
-.login-and-download a{
-    padding: 0 ;
+    width: 100%;
 }
 
 .download-link{
@@ -111,7 +112,7 @@ main{
 
 /* ________________________ Main Window ________________________ */
 .content-window{
-    width: calc(100vw - 232px);
+    width: calc(100vw - 80px);
     background-color: #121212;
 }
 
@@ -171,6 +172,8 @@ footer{
 .heart-container a:hover{
     color: white;
 }
+
+
 /******************* Player *******************/
 .player{
     display: flex;
@@ -181,7 +184,7 @@ footer{
 }
 
 .player-buttons{
-    width: 35%;
+    width: 30%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -282,4 +285,60 @@ footer{
 
 #volume:focus{
     outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************* Media Query*******************/
+@media screen and (min-width: 768px) {
+
+    .side-bar{
+        width: 232px;
+        align-items: baseline;
+        padding-left: 24px;
+    }
+
+    .side-bar-link{
+        text-align: left;
+    }
+
+    .content-window{
+        width: calc(100vw - 232px);
+    }
+
+    .side-bar-text{
+        display: inline-block;
+    }
+
+    .side-bar i{
+        margin-right: 15px;
+    }
+
+    #big-logo{
+        max-width: 130px;
+        display: block;
+    }
+    #small-logo{
+        max-width: 40px;
+        display: none;
+    }
+
 }
