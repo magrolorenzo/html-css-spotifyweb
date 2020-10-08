@@ -115,7 +115,59 @@ main{
 .content-window{
     width: calc(100vw - 80px);
     background-color: #121212;
+    overflow: hidden;
+    padding: 40px 20px;
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    height: 100%;
+    margin: auto;
+    border: 1px solid yellow;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid red;
+}
+
+.reduced-menu{
+    display: block;
+}
+
+.fa-bars{
+    font-size: 32px;
+}
+
+.expandend-menu{
+    display: none;
+    text-align: center;
+}
+
+.expandend-menu li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu a{
+    color: #b3b3b3;
+    font-weight: 500;
+    width: 100%;
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: white;
+}
+
+
+
+
 
 
 
@@ -316,25 +368,6 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /******************* Media Query*******************/
 @media screen and (min-width: 576px) {
 
@@ -404,6 +437,18 @@ footer{
 
     .footer-right{
         display: flex;
+    }
+
+    .menu{
+        justify-content: center;
+    }
+
+    .expandend-menu{
+        display: block;
+    }
+
+    .reduced-menu{
+        display: none;
     }
 
 
