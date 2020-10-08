@@ -86,67 +86,83 @@
             </section>
 
             <section class="content-window">
-
             </section>
 
         </main>
 
         <footer>
 
-            <div class="song-info">
+            <div class="footer-left">
+                <div class="song-info">
 
-                <div class="artwork-container">
-                    <img src="https://i.scdn.co/image/ab67616d00004851fecc28a97580e0605990211c" alt="artwork">
+                    <!-- Copertina Album -->
+                    <div class="artwork-container">
+                        <img src="https://i.scdn.co/image/ab67616d00004851fecc28a97580e0605990211c" alt="artwork">
+                    </div>
+
+                    <!-- Titolo e Artista canzone -->
+                    <div class="title-and-artist">
+                        <span>
+                            <a href="#" class="song-title">
+                                Texas Sun
+                            </a>
+                        </span>
+                        <p>
+                            <span><a href="#" class="artist">Khruangbin</a></span>, <span><a href="#" class="artist">Leon Bridges</a></span>
+                        </p>
+                    </div>
+
+                    <!-- Contenitore cuore -->
+                    <div class="heart-container">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                    </div>
+
                 </div>
-
-                <div class="title-and-artist md-hiding">
-                    <span>
-                        <a href="#" class="song-title">
-                            Texas Sun
-                        </a>
-                    </span>
-                    <p>
-                        <span><a href="#" class="artist">Khruangbin</a></span>, <span><a href="#" class="artist">Leon Bridges</a></span>
-                    </p>
-                </div>
-
-                <div class="heart-container">
-                    <a href="#"><i class="far fa-heart"></i></a>
-                </div>
-
             </div>
 
-            <div class="player">
+            <div class="footer-center">
 
-                <div class="player-buttons">
-                    <span>
-                        <i class="fas fa-random player-btn"></i>
-                    </span>
-                    <span>
-                        <i class="fas fa-step-backward player-btn"></i>
-                    </span>
-                    <span>
-                        <i class="far fa-pause-circle player-btn"></i>
-                    </span>
-                    <span>
-                        <i class="fas fa-step-forward player-btn"></i>
-                    </span>
-                    <span>
-                        <i class="fas fa-redo-alt player-btn"></i>
-                    </span>
-                </div>
-                <div class="song-time">
-                    <input type="range" id="time" name="time" min="0:00" max="4:12">
-                </div>
+                <div class="player">
 
+                    <div class="player-buttons">
+                        <span>
+                            <i class="fas fa-random player-btn"></i>
+                        </span>
+                        <span>
+                            <i class="fas fa-step-backward player-btn"></i>
+                        </span>
+                        <span>
+                            <i class="far fa-pause-circle player-btn"></i>
+                        </span>
+                        <span>
+                            <i class="fas fa-step-forward player-btn"></i>
+                        </span>
+                        <span>
+                            <i class="fas fa-redo-alt player-btn"></i>
+                        </span>
+                    </div>
+
+                    <div class="song-time">
+                        <input type="range" id="time" name="time" min="0:00" max="4:12">
+                    </div>
+
+                </div>
             </div>
 
-            <div class="other-controls">
-                <span><i class="fas fa-list-ul"></i></span>
-                <span><i class="fas fa-tv"></i></span>
-                <div class="volume-container">
-                    <input type="range" id="volume" name="volume" min="0" max="100">
+            <div class="footer-right">
+
+                <div class="other-controls">
+
+                    <span><i class="fas fa-list-ul"></i></span>
+
+                    <span><i class="fas fa-tv"></i></span>
+
+                    <div class="volume-container">
+                        <input type="range" id="volume" name="volume" min="0" max="100">
+                    </div>
+                    
                 </div>
+
             </div>
 
         </footer>
