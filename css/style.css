@@ -193,10 +193,14 @@ main{
     margin: 15px;
 
 }
-.card img{
+.playlist-img,
+.artist-img{
     width: 100%;
-    border-radius: 50%;
     margin-bottom: 15px;
+}
+
+.artist-img{
+    border-radius: 50%;
 }
 
 .card h2{
